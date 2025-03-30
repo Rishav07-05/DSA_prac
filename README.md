@@ -73,7 +73,6 @@ If you’d like to contribute:
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 - [LeetCode](https://leetcode.com/)
 - [Codeforces](https://codeforces.com/)
-- [HackerRank](https://www.hackerrank.com/)
 
 Happy Coding! 🎯
 
