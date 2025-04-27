@@ -33,3 +33,5 @@ sayDigits
 checkSorted
 sumArray
 maxEle
+reverseArr
+digitSum
