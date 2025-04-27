@@ -66,3 +66,22 @@
 //     int ans = solve(n);
 //     cout << ans;
 // }
+
+
+#include <bits/stdc++.h>
+using namespace std;    
+
+int solve(int n){
+    if(n == 0){
+        return 0;
+    }
+    int ans =  n + solve(n - 1);
+    return ans;
+}
+
+int main(){
+    int n;
+    cin >> n;
+    int ans = solve(n);
+    cout<< ans;
+}
