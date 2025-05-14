@@ -156,19 +156,42 @@
 
 // pattern 9
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin >> n;
+
+//     for (int i = 1; i <= 2*n-1; i++)
+//     {
+//         int star = i;
+//         if(i > n)
+//             star = 2 * n - i;
+//         for (int j = 1; j <= star; j++){
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+// }
+
+
+// pattern 10
+
+
 #include <iostream>
 using namespace std;
 int main(){
     int n;
     cin >> n;
-
-    for (int i = 1; i <= 2*n-1; i++)
+    int start = 1;
+    for (int i = 0; i < n; i++)
     {
-        int star = i;
-        if(i > n)
-            star = 2 * n - i;
-        for (int j = 1; j <= star; j++){
-            cout << "*";
+        if(i % 2 == 0){
+            start = 1;
+        }
+        for (int j = 0; j <= i; j++){
+            cout << start << " ";
+            start = 1 - start;
         }
         cout << endl;
     }
