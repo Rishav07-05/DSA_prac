@@ -3,3 +3,4 @@ checkUnique
 checkDuplicate
 largestEle
 secondLargest
+longestSubArray
