@@ -6,3 +6,4 @@ transpose
 rowMaxSum
 diagonal
 identityMatrix
+rowRev
