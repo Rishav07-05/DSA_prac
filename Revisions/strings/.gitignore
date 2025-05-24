@@ -3,3 +3,5 @@ checkPalindrome
 cntVowelConsonant
 upperLower
 removeSpace
+cntWords
+checkAnagram
