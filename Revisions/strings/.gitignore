@@ -6,3 +6,4 @@ removeSpace
 cntWords
 checkAnagram
 validPalindrome
+checkCharFreq
