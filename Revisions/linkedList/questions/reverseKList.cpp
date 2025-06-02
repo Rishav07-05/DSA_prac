@@ -28,6 +28,11 @@ void print(node* &head){
 
 
 node* revereKGroup(node *&head, int k){
+
+    if(head == nullptr || k == 1){
+        return head;
+    }
+
     int cnt = 0;
     node *temp = head;
     while (cnt < k && temp != nullptr)
