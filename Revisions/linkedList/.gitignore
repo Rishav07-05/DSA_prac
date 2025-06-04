@@ -10,3 +10,5 @@ reverseKList
 checkCircularLL
 doublyRevese
 detectLoop
+startingNodeLoop
+removeLoop
