@@ -16,3 +16,4 @@ checkDuplicateInSortedLL
 checkDuplicateUnsortedLL
 sort012InLL
 mergeTwoSortedList
+checkPalindromeInLL
