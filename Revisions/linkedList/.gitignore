@@ -13,3 +13,4 @@ detectLoop
 startingNodeLoop
 removeLoop
 checkDuplicateInSortedLL
+checkDuplicateUnsortedLL
