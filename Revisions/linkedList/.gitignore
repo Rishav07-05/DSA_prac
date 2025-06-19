@@ -14,3 +14,5 @@ startingNodeLoop
 removeLoop
 checkDuplicateInSortedLL
 checkDuplicateUnsortedLL
+sort012InLL
+mergeTwoSortedList
