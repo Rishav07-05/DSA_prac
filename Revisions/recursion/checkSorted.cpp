@@ -1,17 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isSorted(vector<int> arr , int n){
-    if (n == 0 || n == 1){
+bool isSorted(vector<int> arr , int index){
+    if (index == arr.size() - 1){
         return true;
     }
 
-    if(arr[0] < arr[1]){
-        return true;
-    }
-    else{
+    if(arr[index] > arr[index + 1]){
         return false;
     }
+
+        return isSorted(arr , index + 1);
 }
 
 int main(){
@@ -22,7 +21,7 @@ int main(){
         cin >> arr[i];
     }
 
-    if(isSorted(arr , n)){
+    if(isSorted(arr , 0)){
         cout << "Sorted";
     }
     else{
