@@ -2,3 +2,5 @@ linearSearch
 reverseString
 BinarySearch
 checkPalindrome
+bubbleSort
+selectionSort
