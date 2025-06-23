@@ -5,3 +5,4 @@ checkPalindrome
 bubbleSort
 selectionSort
 mergeSort
+quickSort
