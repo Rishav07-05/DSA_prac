@@ -7,3 +7,4 @@ selectionSort
 mergeSort
 quickSort
 getPowerSet
+permutationString
