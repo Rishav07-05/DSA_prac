@@ -5,3 +5,4 @@ deleteMiddle
 validParenthesis
 pushAtBottom
 reverseStack
+sortStack
