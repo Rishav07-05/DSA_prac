@@ -6,3 +6,4 @@ validParenthesis
 pushAtBottom
 reverseStack
 sortStack
+checkRedundantBracs
