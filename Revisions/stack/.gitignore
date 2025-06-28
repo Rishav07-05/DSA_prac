@@ -3,3 +3,5 @@ class_Implement
 reverseString
 deleteMiddle
 validParenthesis
+pushAtBottom
+reverseStack
