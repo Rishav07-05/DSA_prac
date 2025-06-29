@@ -7,3 +7,4 @@ pushAtBottom
 reverseStack
 sortStack
 checkRedundantBracs
+nextSmallerEle
