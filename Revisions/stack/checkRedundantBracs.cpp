@@ -12,7 +12,7 @@ bool checkRedundant(stack<char> &st , string str){
         else
         {
             bool isredundant = true;
-            if (str[i] == ')')
+            if (str[i] == ')') // this is the check for redundant
             {
                 while(st.top() != '('){
                     if (st.top() == '+' || st.top() == '-' || st.top() == '*' || st.top() == '/')
