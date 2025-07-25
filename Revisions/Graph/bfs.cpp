@@ -48,7 +48,7 @@ vector<int> bfsTraversal(int n, vector<vector<int>> &edges)
     unordered_map<int, bool> visited;
 
     vector<int> ans;
-
+    
     for (int i = 0; i < n; i++)
     {
         if(!visited[i])
