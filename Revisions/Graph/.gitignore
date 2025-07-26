@@ -2,4 +2,5 @@ graphCreation
 bfs
 .vscode/settings.json
 dfs
-detectCyclic
+detectCyclicUndirected
+detectCyclicDirected
