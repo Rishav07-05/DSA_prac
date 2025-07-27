@@ -4,3 +4,4 @@ bfs
 dfs
 detectCyclicUndirected
 detectCyclicDirected
+topologicalSort
