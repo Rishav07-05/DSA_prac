@@ -5,3 +5,4 @@ dfs
 detectCyclicUndirected
 detectCyclicDirected
 topologicalSort
+kahnTopoLogicalSort

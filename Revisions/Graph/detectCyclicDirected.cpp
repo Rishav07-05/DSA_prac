@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+// using dfs 
+
 bool detectCycleDfs(unordered_map<int, bool> &visited, unordered_map<int, bool> &dfsVisited, unordered_map<int, list<int>> &adj , int node)
 {
     visited[node] = true;
@@ -44,6 +47,49 @@ bool isCyclic(unordered_map<int, list<int>> &adj, int n, int m)
     return false;
 }
 
+
+
+// using bfs - (Kahn's algo)
+    bool bfsDetectCycle(unordered_map<int, list<int>> &adj, int n, int m)
+{
+    vector<int> indegree(n);
+    queue<int> q;
+    int cnt = 0;
+
+    for (auto i : adj)
+    {
+        for (auto j : i.second)
+        {
+            indegree[j]++;
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (indegree[i] == 0)
+        {
+            q.push(i);
+        }
+    }
+
+    while (!q.empty())
+    {
+        int frontNode = q.front();
+        q.pop();
+        cnt++;
+
+        for (auto i : adj[frontNode])
+        {
+            indegree[i]--;
+            if (indegree[i] == 0)
+            {
+                q.push(i);
+            }
+        }
+    }
+    return cnt != n;
+}
+
 int main()
 {
     int n;
@@ -69,11 +115,24 @@ int main()
         adj[src].push_back(dest);
     }
 
-    bool ans = isCyclic(adj , n , m);
 
-    if(ans)
+    // bool ans = isCyclic(adj , n , m);
+
+    // if(ans)
+    // {
+    //     cout << "Cycle detected";
+    // }
+    // else
+    // {
+    //     cout << "Cycle not present";
+    // }
+
+
+
+
+    if (bfsDetectCycle(adj, n, m))
     {
-        cout << "Cycle detected";
+        cout << "Cycle present";
     }
     else
     {
